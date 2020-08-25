@@ -27,7 +27,7 @@ export const columnDefs = [
     }
   },
   {
-    headerName: '*Rates',
+    headerName: '*Rate',
     field: 'rate',
     width: 50, sortable: true, unSortIcon: true, filter: 'agNumberColumnFilter', floatingFilter: true, resizable: true,
     cellEditor: 'validationEditor',
