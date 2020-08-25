@@ -1,6 +1,6 @@
 ## 'Results'
 
-![alt text](https://github.com/bchariot/ReactCRUD/blob/master/public/grid.png?raw=true)
+![grid pic](https://github.com/bchariot/ReactCRUD/blob/master/client/public/grid.png?raw=true)
 
 ### `Development`
 
