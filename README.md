@@ -1,3 +1,7 @@
+## 'Results'
+
+![alt text](https://github.com/bchariot/ReactCRUD/blob/master/public/grid.png?raw=true)
+
 ### `Development`
 
 The server and client can be started from the terminal with this one command in the root directory of the project:
