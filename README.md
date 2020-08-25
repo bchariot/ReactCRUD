@@ -1,4 +1,6 @@
-## `Results`
+### `Results`
+
+Using ag-grid with ag-theme-alpine styling:
 
 ![grid pic](https://github.com/bchariot/ReactCRUD/blob/master/client/public/grid.png?raw=true)
 
