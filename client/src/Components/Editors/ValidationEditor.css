@@ -1,0 +1,49 @@
+.async-validation-container {
+  position: relative;
+}
+
+.async-validation-container>span {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(-100%);
+  padding: 0 12px;
+  font-size: 20px;
+  width: 20px;
+}
+
+.async-validation-container .success {
+  color: dodgerblue;
+}
+
+.async-validation-container .loading {
+  color: lightgrey;
+}
+
+.async-validation-container .fail {
+  color: #E91E63;
+}
+
+.loading:after {
+  overflow: hidden;
+  display: block;
+  transform: translateY(-5px);
+  -webkit-animation: ellipsis steps(4, end) 1000ms infinite;
+  animation: ellipsis steps(4, end) 1000ms infinite;
+  /* ascii code for the ellipsis character */
+  content: "\2026";
+  font-size: 30px;
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+      width: 30px;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+      width: 30px;
+  }
+}

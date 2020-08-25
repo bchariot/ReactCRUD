@@ -1,0 +1,86 @@
+/* ========= App Styles  ========= */
+
+body {
+  background: white;
+}
+
+.my-app {
+  width: 1100px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ========= Grid Styles  ========= */
+
+.ag-center-cols-container .MuiInput-underline:before {
+  display: none !important;
+}
+
+.ag-status-bar {
+  background: #007bff;
+  height: 60px;
+}
+
+.ag-input-field-input.ag-text-field-input {
+  height: 40px;
+  font-size: 1rem !important;
+}
+
+/* ========= Button Styles ========= */
+
+button[variant][color] {
+  border: none;
+  color: white;
+  padding: 5px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+button[variant][color]:hover {
+  /* background-color: black; */
+  /* color: grey; */
+}
+
+button[variant][color]:focused {
+  outline: none;
+}
+
+button[variant][color]:disabled {
+  color: lightgrey !important;
+  border-color: lightgrey !important;
+  background: whitesmoke !important;
+}
+
+button[variant="outlined"][color="primary"] {
+  color: dodgerblue;
+  border-color: dodgerblue;
+}
+
+button[variant="contained"][color="primary"] {
+  background-color: dodgerblue;
+  border-color: dodgerblue;
+  color: white;
+}
+
+button[variant="outlined"][color="secondary"] {
+  color: #E91E63;
+  border-color: #E91E63;
+}
+
+button[variant="contained"][color="secondary"] {
+  background-color: #E91E63;
+  border-color: #E91E63;
+  color: white;
+}

@@ -1,0 +1,10 @@
+.add-btn-container>button {
+  width: 120px !important;
+  padding: 10px !important;
+  margin: 8px !important;
+}
+
+.add-btn-container>button[variant][color]:disabled {
+  background-color: inherit !important;
+  opacity: 0.7;
+}
