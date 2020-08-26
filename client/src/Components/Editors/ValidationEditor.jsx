@@ -26,12 +26,14 @@ export default forwardRef((props, ref) => {
                 }, 1);
             }
         })
-            .then(valid => {
-                setValid(valid);
-                setValidating(false)
-            })
-            .catch(err => console.log(err));
-    }, [debouncedInputVal]);
+        .then(valid => {
+            setValid(valid);
+            setValidating(false)
+        })
+        .catch(err => console.log(err));
+    },
+    // eslint-disable-next-line
+    [debouncedInputVal]);
 
     useImperativeHandle(ref, () => {
         return {
@@ -69,7 +71,7 @@ export default forwardRef((props, ref) => {
     }
 
     return (
-        <div className="async-validation-container">
+        <div className="validation-container">
             <input
                 type="text"
                 className="ag-input-field-input ag-text-field-input"

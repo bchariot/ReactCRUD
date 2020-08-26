@@ -3,10 +3,8 @@ import { AgGridReact } from "ag-grid-react";
 import "ag-grid-enterprise";
 import "ag-grid-community/dist/styles/ag-grid.css";
 import "ag-grid-community/dist/styles/ag-theme-alpine.css";
-
 import { columnDefs, defaultColDef } from "./columns";
 import GridComponents from "./Components";
-
 import { uuid } from "uuidv4";
 import "./App.css";
 
@@ -33,11 +31,7 @@ function App() {
 
   return (
     <div className="my-app">
-      <div
-        id="myGrid"
-        style={{ height: "100%", width: "100%" }}
-        className="ag-theme-alpine"
-      >
+      <div id="myGrid" style={{ height: "100%", width: "100%" }} className="ag-theme-alpine">
         <AgGridReact
           columnDefs={columnDefs}
           defaultColDef={defaultColDef}
@@ -49,8 +43,7 @@ function App() {
           suppressClickEdit
           statusBar={{
             statusPanels: [{ statusPanel: "addRowStatusBar" }]
-          }}
-        />
+          }} />
       </div>
     </div>
   );

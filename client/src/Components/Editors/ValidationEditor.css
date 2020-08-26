@@ -1,8 +1,8 @@
-.async-validation-container {
+.validation-container {
   position: relative;
 }
 
-.async-validation-container>span {
+.validation-container>span {
   position: absolute;
   top: 0;
   left: 100%;
@@ -12,15 +12,15 @@
   width: 20px;
 }
 
-.async-validation-container .success {
+.validation-container .success {
   color: dodgerblue;
 }
 
-.async-validation-container .loading {
+.validation-container .loading {
   color: lightgrey;
 }
 
-.async-validation-container .fail {
+.validation-container .fail {
   color: #E91E63;
 }
 
@@ -30,8 +30,7 @@
   transform: translateY(-5px);
   -webkit-animation: ellipsis steps(4, end) 1000ms infinite;
   animation: ellipsis steps(4, end) 1000ms infinite;
-  /* ascii code for the ellipsis character */
-  content: "\2026";
+  content: "\2026"; /* ascii code for the ellipsis character */
   font-size: 30px;
   width: 0px;
 }

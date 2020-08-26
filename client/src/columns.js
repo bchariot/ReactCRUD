@@ -14,7 +14,7 @@ export const columnDefs = [
     width: 100, sortable: true, unSortIcon: true, filter: 'agTextColumnFilter', floatingFilter: true, resizable: true,
     cellEditor: 'validationEditor',
     cellEditorParams: {
-      condition: value => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)
+      condition: value => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(.\w{2,3})+$/.test(value)
     }
   },
   {

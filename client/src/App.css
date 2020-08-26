@@ -49,8 +49,8 @@ button[variant][color] {
 }
 
 button[variant][color]:hover {
-  /* background-color: black; */
-  /* color: grey; */
+  background-color: orangered;
+  color: black;
 }
 
 button[variant][color]:focused {

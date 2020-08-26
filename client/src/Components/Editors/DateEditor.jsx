@@ -29,6 +29,7 @@ export default forwardRef((props, ref) => {
                 if (!props.value) {
                     return;
                 }
+                // eslint-disable-next-line
                 const [_, month, day, year] = props.value.match(/(\d{2})\/(\d{2})\/(\d{4})/);
                 let selectedDate = new Date(year, month - 1, day);
                 setSelectedDate(selectedDate);
@@ -39,7 +40,7 @@ export default forwardRef((props, ref) => {
     return (
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <KeyboardDatePicker
-                style={{ width: '100%', margin: 0, padding: '6px 10px', }}
+                style={{ width: '100%', margin: 0, padding: '6px 10px' }}
                 margin="normal"
                 id="date-picker-dialog"
                 format="MM/dd/yyyy"
